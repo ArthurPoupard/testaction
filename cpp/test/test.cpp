@@ -3,12 +3,18 @@
 #include "../function/function.h"
 
 
-int function(int number) {
+int local(int number) {
     return(number + 2);
 }
 
 TEST_CASE("testing the local function") {
-    CHECK(function(1) == 3);
-    CHECK(function(0) == 2);
-    CHECK(function(-3) == -1);
+    CHECK(local(1) == 3);
+    CHECK(local(0) == 2);
+    CHECK(local(-3) == -1);
+}
+
+TEST_CASE("testing the other function") {
+    CHECK(otherfunction(1) == 3);
+    CHECK(otherfunction(0) == 2);
+    CHECK(otherfunction(-3) == -1);
 }
