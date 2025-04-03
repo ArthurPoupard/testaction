@@ -58,14 +58,9 @@ jobs:
   build-and-test:
       runs-on: ubuntu-22.04
       steps:
-      - uses: actions/checkout@v2
-      - name: install cppunit
-        run: sudo apt install -y libcppunit-dev
-      - name: make
-        run: make
-        
-      - name: configure
-        run: ./configure
+      - uses: actions/checkout@v4
+      - name: Setup GoogleTest
+        uses: Bacondish2023/setup-googletest@v1.0.1
       
       - name: make test
         run: make test
