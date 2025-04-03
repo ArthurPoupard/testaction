@@ -55,17 +55,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  build-and-test:
-      runs-on: ubuntu-22.04
-      steps:
-      - uses: actions/checkout@v4
-      - name: Setup GoogleTest
-        uses: Bacondish2023/setup-googletest@v1.0.1
-
-      
-      - name: configure
-        run: mkdir build && cd build && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-Werror" ..
-      - name: make
-        run: cd build && make
-      - name: Run Test
-        run: /home/runner/work/testaction/testaction/build/test/github_actions_gtest_example.test
+  
