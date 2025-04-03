@@ -1,8 +1,4 @@
 CXX = g++
-
-all: test_premier
-
-test_premier: test_premier.cpp
-	test_premier.cpp -o test_premier
-
-
+ 
+ test: test_premier.cpp
+ 	g++ test_premier.cpp -o test
