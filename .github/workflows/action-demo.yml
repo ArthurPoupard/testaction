@@ -71,4 +71,4 @@ jobs:
       - name: make
         run: cd build && make
       - name: Run Test
-        run: /home/runner/work/testaction/build/test/github_actions_gtest_example.test
+        run: /home/runner/work/testaction/testaction/build/test/github_actions_gtest_example.test
