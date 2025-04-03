@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "./function/function.hpp"
+#include "../function/function.h"
 
 
 int function(int number) {
