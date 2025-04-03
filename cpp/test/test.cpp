@@ -6,7 +6,7 @@ int function(int number) {
 }
 
 TEST_CASE("testing the factorial function") {
-    CHECK(factorial(1) == 3);
-    CHECK(factorial(0) == 2);
-    CHECK(factorial(-3) == -1);
+    CHECK(function(1) == 3);
+    CHECK(function(0) == 2);
+    CHECK(function(-3) == -1);
 }
