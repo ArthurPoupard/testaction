@@ -4,6 +4,7 @@ all:
 
 test:
       chmod +x hello
+      chmod +x configure
       ./helloTest
 
 clean:
