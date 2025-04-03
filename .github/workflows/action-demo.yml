@@ -50,4 +50,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  
+          
+  build-and-test:
+      runs-on: ubuntu-22.04
+      steps:
+      - uses: actions/checkout@v4
+      - name: make
+        run: cd cpp/test && make
+      - name: Run Test
+        run: /home/runner/work/testaction/testaction/cpp/test/test
