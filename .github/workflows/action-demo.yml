@@ -25,10 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      #- name: Setup ROS environment
-      #  uses: ros-tooling/setup-ros@0.7.10
-      #  with:
-      #    required-ros-distributions: noetic
+      - name: Setup ROS environment
+        uses: ros-tooling/setup-ros@0.7.10
+        with:
+          required-ros-distributions: noetic
           
 
       # Runs a single command using the runners shell
