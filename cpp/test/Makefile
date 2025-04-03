@@ -1,4 +1,2 @@
-CXX = g++
-
 test: test.cpp
-	cc test.cpp -o test
+	g++ test.cpp -o test
