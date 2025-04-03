@@ -58,4 +58,4 @@ jobs:
       - name: make
         run: cd cpp/test && make
       - name: Run Test
-        run: /home/runner/work/testaction/testaction/cpp/test/test
+        run: /home/runner/work/testaction/testaction/cpp/test/test_*
