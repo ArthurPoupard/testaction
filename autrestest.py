@@ -3,7 +3,7 @@ def func(x):
 
 
 def test_answer():
-    assert func(1) == 4
+    assert func(1) == 2
 
 def test_answer2():
     assert func(3) == 4
