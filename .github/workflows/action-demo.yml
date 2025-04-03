@@ -55,3 +55,15 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  build-and-test:
+      runs-on: ubuntu-22.04
+      steps:
+      - uses: actions/checkout@v2
+      - name: install cppunit
+        run: sudo apt install -y libcppunit-dev
+      - name: configure
+        run: ./configure
+      - name: make
+        run: make
+      - name: make test
+        run: make test
