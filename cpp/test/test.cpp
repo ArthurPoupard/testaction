@@ -14,7 +14,7 @@ TEST_CASE("testing the local function") {
 }
 
 TEST_CASE("testing the other function") {
-    CHECK(otherfunction(1) == 3);
-    CHECK(otherfunction(0) == 2);
-    CHECK(otherfunction(-3) == -1);
+    CHECK(otherfunc(1) == 1);
+    CHECK(otherfunc(0) == 0);
+    CHECK(otherfunc(-3) == -3);
 }
