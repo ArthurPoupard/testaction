@@ -1,0 +1,1 @@
+int otherfunc(int number);
