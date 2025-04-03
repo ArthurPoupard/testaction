@@ -3,6 +3,10 @@
 
 int factorial(int number) { return number < 1 ? number : factorial(number - 1) * number; }
 
+int main(int argc, char *argv[])
+{
+    return(factorial(1));
+}
 /*
 TEST_CASE("testing the factorial function") {
     CHECK(factorial(1) == 1);
