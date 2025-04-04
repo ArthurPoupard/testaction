@@ -1,10 +1,11 @@
 CXX = g++
-PATH_TO_TESTED_FILES_1 = ../functions
+PATH_PERCEPTION = ../perception
+PATH_NAVIGATION = ../navigation
 
-all: test2 test1
+all: test_perception test_navigation
 
-test1: test_premier.cpp
-	$(CXX) -I $(PATH_TO_TESTED_FILES_1) $(PATH_TO_TESTED_FILES_1)/*.cpp test_premier.cpp -o test1
+test_perception: test_perception.cpp
+	$(CXX) -I $(PATH_PERCEPTION) $(PATH_PERCEPTION)/*.cpp test_perception.cpp -o test_perception
 
-test2: test_autre.cpp
-	$(CXX) test_autre.cpp -o test2
+test_navigation: test_navigation.cpp
+	$(CXX) -I $(PATH_NAVIGATION) $(PATH_NAVIGATION)/*.cpp test_navigation.cpp -o test_navigation
