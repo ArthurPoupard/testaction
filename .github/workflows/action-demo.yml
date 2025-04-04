@@ -61,3 +61,12 @@ jobs:
         run: /home/runner/work/testaction/testaction/cpp/test/test_navigation
       - name: Run Test Perception
         run: /home/runner/work/testaction/testaction/cpp/test/test_perception
+
+  gtest:
+      runs-on: ubuntu-22.04
+      steps:
+      - uses: actions/checkout@v4
+      - name: make
+        run: cd cpp/gtest && make all
+      - name: Run gTest
+        run: /home/runner/work/testaction/testaction/cpp/gtest/gtestnav
