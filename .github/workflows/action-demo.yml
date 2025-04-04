@@ -58,4 +58,4 @@ jobs:
       - name: make
         run: cd cpp/test && g++ test_premier.cpp ../functions/mainfunc.cpp -o test
       - name: Run Test
-        run: /home/runner/work/testaction/testaction/cpp/test/test_premier
+        run: cd cpp/test && ./test_premier
