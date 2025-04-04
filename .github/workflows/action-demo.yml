@@ -56,6 +56,6 @@ jobs:
       steps:
       - uses: actions/checkout@v4
       - name: make
-        run: cd cpp/test && make
+        run: cd cpp/test && make all
       - name: Run Test
         run: /home/runner/work/testaction/testaction/cpp/test/test_premier
