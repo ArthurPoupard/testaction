@@ -57,5 +57,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: make
         run: cd cpp/test && make all
-      - name: Run Test
-        run: /home/runner/work/testaction/testaction/cpp/test/test1
+      - name: Run Test Navigation
+        run: /home/runner/work/testaction/testaction/cpp/test/test_navigation
+      - name: Run Test Perception
+        run: /home/runner/work/testaction/testaction/cpp/test/test_perception
