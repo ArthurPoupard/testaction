@@ -1,5 +1,5 @@
 CXX = g++
-VAR = cpp/functions/mainfunc.cpp
+VAR = ../functions/mainfunc.cpp
 
 all: test2 test1
 
