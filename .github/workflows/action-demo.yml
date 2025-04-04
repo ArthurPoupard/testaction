@@ -61,5 +61,3 @@ jobs:
         run: /home/runner/work/testaction/testaction/cpp/test/test_navigation
       - name: Run Test Perception
         run: /home/runner/work/testaction/testaction/cpp/test/test_perception
-      - name: Doctest command
-        run: cd cpp/test && doctest
