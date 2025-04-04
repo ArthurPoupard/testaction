@@ -1,5 +1,5 @@
 CXX = g++
-PATH_TO_TESTED_FILES_1 = ../functions/
+PATH_TO_TESTED_FILES_1 = ../functions
 
 all: test2 test1
 
