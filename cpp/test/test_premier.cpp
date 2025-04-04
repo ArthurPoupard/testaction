@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "../functions/mainfunc.h"
+#include "mainfunc.h"
 
 
 int local(int number) {
